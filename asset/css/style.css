@@ -11,12 +11,100 @@
 }
 
 
+/*---------------------------/
+#General
+/-------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Red Hat Display", sans-serif;
+}
+
+.title {
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    position: relative;
+    color: #0493bf;
+}
+
+.title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #0493bf;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.padding {
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+}
+
+.title h2 {
+    font-size: 28px;
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 815px) {
+    .padding {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .padding {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
 /* ----------------- /
 #Body
 / ----------------- */
 
 body {
     font-size: 18px;
-    color: #141b1fda;
+    /* color: #141b1fda; */
+    /* background-color: #1c2a37f6; */
     font-family: "Teachers", sans-serif;
+}
+
+
+/* ----------------- /
+#Header
+/ ----------------- */
+
+header .logo img {
+    width: 90px;
 }
