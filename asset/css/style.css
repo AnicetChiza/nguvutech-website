@@ -96,7 +96,8 @@ h6 {
 body {
     font-size: 18px;
     /* color: #141b1fda; */
-    /* background-color: #1c2a37f6; */
+    color: #c0c0c0;
+    background-color: #1c2a37f6;
     font-family: "Teachers", sans-serif;
 }
 
@@ -105,6 +106,31 @@ body {
 #Header
 / ----------------- */
 
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    -webkit-column-gap: 10px;
+    justify-content: space-between;
+}
+
 header .logo img {
-    width: 90px;
+    width: 70px;
+    filter: invert(1) brightness(1);
+}
+
+.head-list ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+}
+
+.head-list ul li a {
+    color: #c0c0c0;
+    /* color: #141b1fda; */
 }
