@@ -21,7 +21,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Red Hat Display", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .title {
@@ -110,12 +110,16 @@ header {
     display: flex;
     align-items: center;
     gap: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 100px;
     padding-right: 100px;
     -webkit-column-gap: 10px;
     justify-content: space-between;
+    border-bottom: 1px solid #75747458;
 }
 
 header .logo img {
@@ -133,4 +137,43 @@ header .logo img {
 .head-list ul li a {
     color: #c0c0c0;
     /* color: #141b1fda; */
+}
+
+
+/* ----------------- /
+#Welcome
+/ ----------------- */
+
+.welcome-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    /* justify-content: space-between; */
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+    justify-content: space-between;
+}
+
+.welcome-text h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.welcome-text p{
+    font-size: 20px;
+}
+
+.welcome-text a{
+    color: #c0c0c0;
+    padding: 15px 20px;
+    display: flex;
+    margin-top: 30px;
+    width: fit-content;
+    border: 1px solid #75747458;
 }
