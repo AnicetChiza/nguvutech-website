@@ -94,7 +94,7 @@ h6 {
 / ----------------- */
 
 body {
-    font-size: 18px;
+    font-size: 16px;
     /* color: #141b1fda; */
     color: #c0c0c0;
     background-color: #1c2a37f6;
@@ -197,6 +197,7 @@ header .logo img {
     width: fit-content;
     margin: auto;
     margin-top: 30px;
+    border-radius: 10px;
     border: 1px solid #75747458;
     transition-delay: 0.2s;
     transition: 0.5s ease-in-out;
@@ -279,6 +280,11 @@ header .logo img {
 #services
 / ----------------- */
 
+.titles p{
+    width: 50%;
+    margin-top: 20px;
+}
+
 .service-container{
     display: grid;
     margin-top: 30px;
@@ -292,8 +298,26 @@ header .logo img {
     flex-direction: column;
     gap: 10px;
     text-align: center;
-    padding: 30px 25px;
+    padding: 45px 30px;
     border-radius: 10px;
     -webkit-column-gap: 10px;
+    transition: 0.3s;
+    transition: 0.5s ease-in-out;
+    background-color: #2e3b4593;
+    /* border: 1px solid #75747458; */
+}
+
+.service-item:hover{
+    background-color: #16222cee;
+}
+
+.service-item i{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
     border: 1px solid #75747458;
 }
