@@ -139,6 +139,28 @@ header .logo img {
     /* color: #141b1fda; */
 }
 
+.header-color {
+    transition: 1s;
+    background: #1c2a37f6;
+}
+
+.header-color::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff1a;
+    z-index: 1;
+    backdrop-filter: blur(8px);
+}
+
+.header-color * {
+    position: relative;
+    z-index: 2;
+}
+
 
 /* ----------------- /
 #Welcome
@@ -168,7 +190,7 @@ header .logo img {
     font-size: 20px;
 }
 
-.welcome-text a{
+.welcome-text a {
     color: #c0c0c0;
     padding: 15px 30px;
     display: flex;
@@ -176,4 +198,10 @@ header .logo img {
     margin: auto;
     margin-top: 30px;
     border: 1px solid #75747458;
+    transition-delay: 0.2s;
+    transition: 0.5s ease-in-out;
+}
+
+.welcome-text a:hover{
+    background-color: #1c2a37f6;
 }
