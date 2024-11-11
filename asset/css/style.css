@@ -359,7 +359,6 @@ header .logo img {
 #Blog
 / ----------------- */
 
-
 .blog-container {
     width: 40%;
 }
@@ -440,10 +439,16 @@ header .logo img {
 # Quality
 / ----------------- */
 
+.quality{
+    background-color: #141b1fea;
+}
+
 .quality-container{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
     justify-content: center;
     -webkit-column-gap: 10px;
 }
