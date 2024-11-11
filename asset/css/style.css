@@ -440,7 +440,7 @@ header .logo img {
 / ----------------- */
 
 .quality{
-    background-color: #141b1fea;
+    background-color: #16222cee;
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
 }
 
@@ -542,7 +542,7 @@ header .logo img {
 /-------------------------- */
 
 footer{
-    background-color: #141b1fea;
+    background-color: #16222cee;
 }
 
 footer img{
