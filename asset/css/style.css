@@ -10,6 +10,12 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+    transition: 0.2s ease-in-out;
+}
+
 
 /*---------------------------/
 #General
