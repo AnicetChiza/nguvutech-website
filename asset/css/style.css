@@ -568,3 +568,12 @@ footer img{
 .media i:hover{
     background-color: #c0c0c05a;
 }
+
+.copyright{
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.8;
+    border-top: 1px solid #75747458;
+}
