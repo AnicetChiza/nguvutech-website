@@ -134,6 +134,13 @@ header .logo img {
     filter: invert(1) brightness(1);
 }
 
+.head-list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+}
+
 .head-list ul {
     display: flex;
     align-items: center;
@@ -168,12 +175,53 @@ header .logo img {
     z-index: 2;
 }
 
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+}
+
+.menu-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    display: none;
+    background-color: #c0c0c029;
+}
+
+.exit-icon{
+    display: none;
+}
+
 /* Media query */
 
 @media screen and (max-width: 815px){
     header{
         padding-left: 30px;
         padding-right: 30px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .head-list ul{
+        position: absolute;
+        top: 120px;
+        left: 0;
+        right: 0;
+        height: 70vh;
+        width: 100%;
+        padding: 30px 30px;
+        align-items: flex-start;
+        flex-direction: column;
+        background-color: #4f7c96da;
+    }
+
+    .menu-icon{
+        display: flex;
     }
 }
 
