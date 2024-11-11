@@ -525,12 +525,19 @@ footer img{
     justify-content: space-between;
 }
 
+.footer-container a{
+    color: #c0c0c0;
+    font-size: 15px;
+}
+
 .footer-about{
     width: 40%;
 }
 
 .navigation, .adress{
     display: flex;
+    gap: 5px;
+    -webkit-column-gap: 5px;
     flex-direction: column;
 }
 
@@ -539,3 +546,25 @@ footer img{
     margin-bottom: 20px;
 }
 
+.media div{
+    display: flex;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+}
+
+.media i{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 13px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 0.4s;
+    transition: 0.7s ease-in-out;
+    background-color: #c0c0c029;
+}
+
+.media i:hover{
+    background-color: #c0c0c05a;
+}
