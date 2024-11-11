@@ -504,3 +504,38 @@ header .logo img {
     background: #4f7c96da;
     font-family: "Teachers", sans-serif;
 }
+
+/*---------------------------/
+#Footer
+/-------------------------- */
+
+footer{
+    background-color: #141b1fea;
+}
+
+footer img{
+    width: 70px;
+    filter: invert(1) brightness(1);
+}
+
+.footer-container{
+    display: flex;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+    justify-content: space-between;
+}
+
+.footer-about{
+    width: 40%;
+}
+
+.navigation, .adress{
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation h3, .adress h3, .media h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
