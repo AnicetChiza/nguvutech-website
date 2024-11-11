@@ -428,3 +428,73 @@ header .logo img {
         flex-direction: column;
     }
 }
+
+/*---------------------------/
+#Contact
+/-------------------------- */
+
+.contact-container{
+    display: grid;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    grid-template-columns: 25% auto;
+}
+
+.contact-form form{
+    display: flex;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    flex-direction: column;
+}
+
+.contact-container form input, textarea{
+    border: none;
+    outline: none;
+    background: unset;
+    width: 100%;
+    padding: 15px 15px;
+    border: 1px solid #75747458;
+    font-family: "Teachers", sans-serif;
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.info-item{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.info-item i{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #75747458;
+}
+
+.info-item a{
+    color: #4f7c96da;
+}
+
+.submit{
+    border: none;
+    outline: none;
+    color: #c0c0c0;
+    padding: 15px 30px;
+    width: fit-content;
+    border-radius: 25px;
+    display: flex;
+    margin: auto;
+    background: #4f7c96da;
+    font-family: "Teachers", sans-serif;
+}
