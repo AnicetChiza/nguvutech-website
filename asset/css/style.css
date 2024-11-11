@@ -235,7 +235,7 @@ header .logo img {
     padding: 25px 25px;
     -webkit-column-gap: 20px;
     grid-template-columns: auto auto;
-    background-color: #141b1fea;
+    background-color: #16222cee;
 }
 
 .about-item{
@@ -295,10 +295,17 @@ header .logo img {
 @media screen and (max-width: 1030px){
     .about-container{
         display: grid;
-        gap: 10px;
+        gap: 5px;
         padding: 10px 10px;
-        -webkit-column-gap: 10px;
+        -webkit-column-gap: 5px;
         grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .about-container{
+        margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
@@ -357,6 +364,17 @@ header .logo img {
     }
 }
 
+@media screen and (max-width: 580px){
+    .service-container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .titles p{
+        width: 100%;
+    }
+}
+
 /* ----------------- /
 #Project
 / ----------------- */
@@ -391,6 +409,31 @@ header .logo img {
     }
     .project-image img{
         width: 300px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .project{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .project-image img{
+        width: 250px;
+    }
+
+    .project h3{
+        font-size: 20px;
+    }
+    
+    .project-text p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .project{
+        flex-direction: column;
     }
 }
 
@@ -471,6 +514,16 @@ header .logo img {
     .blog-info {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 785px){
+    .blog-info{
+        flex-direction: column;
+    }
+
+    .blog-container {
+        width: 100%;
     }
 }
 
@@ -577,10 +630,22 @@ header .logo img {
 }
 
 /* media query */
+
 @media screen and (max-width: 1270px){
     .contact{
         margin-left: 0px;
         margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 1095px){
+    .contact-container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .contact-form form{
+        margin-top: 20px;
     }
 }
 
@@ -655,4 +720,22 @@ footer img{
     font-size: 13px;
     opacity: 0.8;
     border-top: 1px solid #75747458;
+}
+
+/* Media query */
+
+@media screen and (max-width: 1030px){
+    .footer-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-about{
+        width: 100%;
+    }
 }
