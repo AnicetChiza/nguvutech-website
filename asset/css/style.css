@@ -359,6 +359,7 @@ header .logo img {
 #Blog
 / ----------------- */
 
+
 .blog-container {
     width: 40%;
 }
@@ -433,6 +434,25 @@ header .logo img {
         display: flex;
         flex-direction: column;
     }
+}
+
+/* ----------------- /
+# Quality
+/ ----------------- */
+
+.quality-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    -webkit-column-gap: 10px;
+}
+
+.quality-container span{
+    padding: 10px 15px;
+    border-radius: 25px;
+    width: fit-content;
+    border: 1px solid #75747458;
 }
 
 /*---------------------------/
