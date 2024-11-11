@@ -21,6 +21,7 @@ h3,
 h4,
 h5,
 h6 {
+    color: #4f7c96da;
     font-family: "Raleway", sans-serif;
 }
 
@@ -375,7 +376,7 @@ header .logo img {
     align-items: center;
     gap: 10px;
     margin-top: 15px;
-    font-size: 13gpx;
+    font-size: 13px;
     margin-bottom: 10px;
     -webkit-column-gap: 10px;
     color: #a6a6a6;
@@ -403,7 +404,7 @@ header .logo img {
 .blog-details p {
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .link {
