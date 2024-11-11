@@ -347,3 +347,35 @@ header .logo img {
     margin-top: 20px;
     font-size: 20px;
 }
+
+/* ----------------- /
+#Blog
+/ ----------------- */
+
+.blog-container{
+    display: grid;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+    grid-template-columns: auto auto auto;
+}
+
+.blog-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.blog-info{
+    display: flex;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+    font-size: 14px;
+}
+
+.blog-info p{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #c0c0c0;
+}
