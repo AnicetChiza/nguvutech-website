@@ -433,9 +433,15 @@ header .logo img {
 #Contact
 /-------------------------- */
 
+.contact{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
 .contact-container{
     display: grid;
     gap: 10px;
+    margin-top: 40px;
     -webkit-column-gap: 10px;
     grid-template-columns: 25% auto;
 }
