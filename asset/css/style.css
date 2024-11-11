@@ -210,8 +210,8 @@ header .logo img {
     .head-list ul{
         position: absolute;
         top: 120px;
-        left: 0;
-        right: 0;
+        left: 20px;
+        right: -20px;
         height: 70vh;
         width: 100%;
         padding: 30px 30px;
@@ -222,6 +222,38 @@ header .logo img {
 
     .menu-icon{
         display: flex;
+    }
+
+    .overlay {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 0.3s ease, visibility 0s 0.3s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #00000080;
+        z-index: 2001;
+    }
+    .overlay::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff1a;
+        backdrop-filter: blur(8px);
+    }
+    .overlay * {
+        position: relative;
+        z-index: 2;
+    }
+    .overlay.active {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.3s ease;
     }
 }
 
