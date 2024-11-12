@@ -310,8 +310,11 @@ header .logo img {
 }
 
 .welcome-text h1 {
-    font-size: 35px;
+    font-size: 45px;
     margin-bottom: 10px;
+    background: linear-gradient(to right, #7b9eb1f0, #4f7c96da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .welcome-text p{
@@ -444,6 +447,11 @@ header .logo img {
 #services
 / ----------------- */
 
+.titles h2{
+    font-size: 35px;
+    color: #4f7c96da;
+}
+
 .titles p{
     width: 50%;
     margin-top: 20px;
@@ -572,6 +580,11 @@ header .logo img {
 #Blog
 / ----------------- */
 
+.blog h2{
+    font-size: 35px;
+    color: #4f7c96da;
+}
+
 .blog-container {
     width: 40%;
 }
@@ -687,6 +700,10 @@ header .logo img {
 /*---------------------------/
 #Contact
 /-------------------------- */
+
+.contact h1{
+    font-size: 35px;
+}
 
 .contact{
     margin-left: 50px;
