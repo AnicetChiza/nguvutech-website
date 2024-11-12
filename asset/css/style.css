@@ -514,6 +514,31 @@ header .logo img {
 }
 
 /* ----------------- /
+# Quality
+/ ----------------- */
+
+.quality{
+    background-color: #16222cee;
+}
+
+.quality-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    justify-content: center;
+    -webkit-column-gap: 10px;
+}
+
+.quality-container span{
+    padding: 10px 15px;
+    border-radius: 25px;
+    width: fit-content;
+    border: 1px solid #75747458;
+}
+
+/* ----------------- /
 #Project
 / ----------------- */
 
@@ -669,31 +694,19 @@ header .logo img {
     }
 }
 
-/* ----------------- /
-# Quality
-/ ----------------- */
+/*---------------------------/
+#Articles
+/-------------------------- */
 
-.quality{
+.articles{
     background-color: #16222cee;
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-}
-
-.quality-container{
     display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    justify-content: center;
-    -webkit-column-gap: 10px;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
 }
 
-.quality-container span{
-    padding: 10px 15px;
-    border-radius: 25px;
-    width: fit-content;
-    border: 1px solid #75747458;
-}
 
 /*---------------------------/
 #Contact
