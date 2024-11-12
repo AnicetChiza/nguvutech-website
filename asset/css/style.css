@@ -447,9 +447,8 @@ header .logo img {
 #services
 / ----------------- */
 
-.titles h2{
+.titles h1{
     font-size: 35px;
-    color: #4f7c96da;
 }
 
 .titles p{
@@ -580,9 +579,8 @@ header .logo img {
 #Blog
 / ----------------- */
 
-.blog h2{
+.blog h1{
     font-size: 35px;
-    color: #4f7c96da;
 }
 
 .blog-container {
