@@ -346,9 +346,9 @@ header .logo img {
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 530px){
     .welcome-text h1 {
-        font-size: 25px;
+        font-size: 30px;
     }
     
     .welcome-text p{
