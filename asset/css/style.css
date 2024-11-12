@@ -702,9 +702,22 @@ header .logo img {
     background-color: #16222cee;
     display: flex;
     align-items: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     justify-content: space-between;
+}
+
+.articles h1{
+    font-size: 35px;
+}
+
+.articles a{
+    color: #c0c0c0;
+    padding: 20px 35px;
+    border-radius: 5px;
+    border: 1px solid #75747458;
 }
 
 
