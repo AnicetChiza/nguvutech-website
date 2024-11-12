@@ -189,9 +189,12 @@ header .logo img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    display: none;
     cursor: pointer;
     background-color: #c0c0c029;
+}
+
+.icon-menu{
+    display: none;
 }
 
 .exit-icon{
