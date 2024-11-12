@@ -1,0 +1,13 @@
+/* -------------------- /
+#Article page
+/ --------------------- */
+
+.all-articles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70vh;
+    background: linear-gradient(to right, #16222cee 0%, #141b1fea 100%), url('../images/home/about\ \(5\).jpg') fixed no-repeat center;
+    background-size: cover;
+}
