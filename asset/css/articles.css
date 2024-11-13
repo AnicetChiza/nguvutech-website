@@ -160,9 +160,8 @@
     padding: 15px 25px;
     transition-delay: 2s;
     transition: 1s ease-in;
-    background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0px 1px 10px #dde1e7;
+    border: 1px solid #75747458;
 }
 
 .faq-container {
@@ -191,7 +190,7 @@
 }
 
 .faq-answer {
-    border-top: 1px solid #dde1e7;
+    border-top: 1px solid #75747458;
 }
 
 .faq-answer p {
@@ -203,7 +202,7 @@
 }
 
 .bi-patch-question-fill {
-    color: #0493bf;
+    color: #4f7c96da;
 }
 
 
