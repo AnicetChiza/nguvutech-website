@@ -127,3 +127,23 @@
 .share-article a{
     color: #c0c0c0;
 }
+
+/* Media query */
+@media screen and (max-width: 1030px){
+    .display-article{
+        grid-template-columns: auto 35%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .display-article{
+        grid-template-columns: auto;
+    }
+
+    .about-ntech{
+        padding: 40px 40px;
+    }
+    .about-ntech img{
+        width: 100px;
+    }
+}
