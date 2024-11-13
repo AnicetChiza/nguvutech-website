@@ -68,3 +68,27 @@
     -webkit-column-gap: 10px;
     justify-content: center;
 }
+
+/* --------------------- /
+#Articles details
+/ --------------------- */
+
+.article-details{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    -webkit-column-gap: 25px;
+}
+
+.article-image img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.article-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+}
