@@ -53,3 +53,18 @@
     border: 1px solid #4f7c96da;
     background-color: #4f7c96da;
 }
+
+
+/* ------------------------------------- /
+#Vues from page readarticle.html
+/ ------------------------------------- */
+
+.vues{
+    display: flex;
+    gap: 10px;
+    color: #4f7c96da;
+    font-weight: 700;
+    font-size: 20px;
+    -webkit-column-gap: 10px;
+    justify-content: center;
+}
