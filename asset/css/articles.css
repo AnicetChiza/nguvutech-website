@@ -92,3 +92,8 @@
     gap: 20px;
     -webkit-column-gap: 20px;
 }
+
+.about-ntech img{
+    width: 300px;
+    filter: invert(1) brightness(1);
+}
