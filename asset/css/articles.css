@@ -17,6 +17,13 @@
     margin-bottom: 10px;
 }
 
+/* Media query */
+@media screen and (max-width: 680px){
+    .all-articles h1{
+        font-size: 30px;
+    } 
+}
+
 /* -------------------- /
 #Pagination
 / --------------------- */
