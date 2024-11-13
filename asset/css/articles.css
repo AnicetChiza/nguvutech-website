@@ -100,7 +100,30 @@
     -webkit-column-gap: 20px;
 }
 
+.display-article{
+    display: grid;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+    margin-top: 30px;
+    grid-template-columns: auto 25%;
+}
+
+.about-ntech{
+    padding: 20px 20px;
+    border-radius: 10px;
+    height: fit-content;
+    text-align: center;
+    color: #c0c0c079;
+    border: 1px solid #75747458;
+}
+
 .about-ntech img{
-    width: 200px;
+    display: flex;
+    margin: auto;
+    width: 150px;
     filter: invert(1) brightness(1);
+}
+
+.share-article a{
+    color: #c0c0c0;
 }
