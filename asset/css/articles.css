@@ -74,10 +74,17 @@
 / --------------------- */
 
 .article-details{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     gap: 25px;
-    -webkit-column-gap: 25px;
+    -webkit-column-gap: 25px; */
+}
+
+.our-article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    -webkit-column-gap: 20px;
 }
 
 .article-image img{
@@ -94,6 +101,6 @@
 }
 
 .about-ntech img{
-    width: 300px;
+    width: 200px;
     filter: invert(1) brightness(1);
 }
