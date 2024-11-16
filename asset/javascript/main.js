@@ -124,4 +124,85 @@ document.addEventListener("click", function(event) {
     if (!event.target.closest(".dropdown")) {
         document.getElementById("dropdown-content").style.display = "none";
     }
-});    
+});  
+
+
+/*------------------------------
+# Réalisations - Carousel
+/-----------------------------*/
+
+// Sélection des éléments nécessaires
+const leftIcon = document.querySelector('.left-icon');
+const rightIcon = document.querySelector('.right-icon');
+const allItems = document.querySelectorAll('.realisation-all-item .all-item');
+
+let currentIndex = 0; // Index de départ
+let visibleCount = calculateVisibleCount(); // Calcul du nombre d'éléments visibles
+
+// Fonction pour calculer le nombre d'éléments visibles selon la largeur de l'écran
+function calculateVisibleCount() {
+    if (window.innerWidth >= 1230) {
+        return 4; // Grand écran
+    } else if (window.innerWidth >= 970) {
+        return 3; // Écran moyen
+    } else if (window.innerWidth >= 560) {
+        return 2; // Tablette
+    } else {
+        return 1; // Mobile
+    }
+}
+
+// Fonction pour mettre à jour l'affichage des éléments
+function updateVisibility() {
+    const totalItems = allItems.length;
+
+    // Empêcher de dépasser les limites
+    if (currentIndex + visibleCount > totalItems) {
+        currentIndex = totalItems - visibleCount; // Ajuster pour montrer les derniers éléments visibles
+    }
+    if (currentIndex < 0) {
+        currentIndex = 0;
+    }
+
+    // Masquer tous les éléments
+    allItems.forEach((item, index) => {
+        item.style.display = 'none';
+    });
+
+    // Afficher uniquement les éléments visibles selon currentIndex
+    for (let i = currentIndex; i < currentIndex + visibleCount; i++) {
+        if (allItems[i]) {
+            allItems[i].style.display = 'block';
+        }
+    }
+
+    // Gérer l'affichage des icônes de navigation
+    leftIcon.style.display = currentIndex > 0 ? 'flex' : 'none';
+    rightIcon.style.display = currentIndex + visibleCount < totalItems ? 'flex' : 'none';
+}
+
+// Gestion du clic sur l'icône de droite
+rightIcon.addEventListener('click', () => {
+    if (currentIndex + visibleCount < allItems.length) {
+        currentIndex++;
+        updateVisibility();
+    }
+});
+
+// Gestion du clic sur l'icône de gauche
+leftIcon.addEventListener('click', () => {
+    if (currentIndex > 0) {
+        currentIndex--;
+        updateVisibility();
+    }
+});
+
+// Mise à jour lors du redimensionnement de la fenêtre
+window.addEventListener('resize', () => {
+    visibleCount = calculateVisibleCount();
+    updateVisibility();
+});
+
+// Initialiser l'affichage
+updateVisibility();
+
