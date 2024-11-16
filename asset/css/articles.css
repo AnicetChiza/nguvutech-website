@@ -235,7 +235,7 @@
 
 .realisation-container h4{
     padding: 15px 50px;
-    border-radius: 30px;
+    border-radius: 5px;
     width: fit-content;
     margin-bottom: 30px;
     border: 1px solid #75747458;
@@ -249,7 +249,7 @@
     position: relative;
 }
 
-.realisation-item{
+.realisation-item, .all-item{
     position: relative;
 }
 
@@ -265,11 +265,11 @@
     position: absolute;
     color: #c0c0c0;
     top: 0;
-    /* display: flex;
+    gap: 10px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; */
-    gap: 10px;
+    flex-direction: column;
     -webkit-column-gap: 10px;
     width: 100%;
     height: 100%;
@@ -283,6 +283,7 @@
     margin-top: 10px;
     font-size: 13px;
     transition-delay: 0.4s;
+    width: fit-content;
     transition: 0.8s ease-in-out;
     border: 1px solid #75747458;
 }
