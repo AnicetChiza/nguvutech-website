@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #049fb7aa;
+    color: #24aaafa2;
     font-family: "Raleway", sans-serif;
 }
 
@@ -187,7 +187,7 @@ header .logo img {
         transform: translateX(-120%);
         align-items: flex-start;
         flex-direction: column;
-        background-color: #4f7c96da;
+        background-color: #24aaafa2;
     }
 
     .head-list ul.active{
@@ -276,7 +276,7 @@ header .logo img {
 .welcome-text h1 {
     font-size: 45px;
     margin-bottom: 10px;
-    background: linear-gradient(to right, #7b9eb1f0, #4f7c96da);
+    background: linear-gradient(to right, #24aaafa2, #4f7c96da);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -293,13 +293,14 @@ header .logo img {
     margin: auto;
     margin-top: 30px;
     border-radius: 10px;
-    border: 1px solid #75747458;
+    /* border: 1px solid #75747458; */
     transition-delay: 0.2s;
     transition: 0.5s ease-in-out;
+    background-color: #24aaafa2;
 }
 
 .welcome-text a:hover{
-    background-color: #4f7c96da;
+    background-color: #24aaaf62;
 }
 
 /* Media query */
@@ -438,8 +439,8 @@ header .logo img {
     -webkit-column-gap: 10px;
     transition: 0.3s;
     transition: 0.5s ease-in-out;
-    background-color: #2e3b4593;
-    /* border: 1px solid #75747458; */
+    /* background-color: #2e3b4593; */
+    border: 1px solid #75747458;
 }
 
 .service-item:hover{
@@ -609,7 +610,7 @@ header .logo img {
 }
 
 .blog-details .link-title {
-    color: #4f7c96da;
+    color: #24aaafa2;
     transition-delay: 0.2s;
     font-weight: 700;
     transition: 0.4s ease-in-out;
@@ -617,7 +618,7 @@ header .logo img {
 }
 
 .blog-details .link-title:hover {
-    color: #4f7c96da;
+    color: #24aaafa2;
 }
 
 .blog-details p {
@@ -627,7 +628,7 @@ header .logo img {
 }
 
 .link {
-    color: #4f7c96da;
+    color: #24aaafa2;
     padding: 10px 25px;
     display: flex;
     margin-top: 20px;
@@ -689,8 +690,8 @@ header .logo img {
 }
 
 .articles a:hover{
-    border: 1px solid #4f7c96da;
-    background-color: #4f7c96da;
+    border: 1px solid #24aaafa2;
+    background-color: #24aaafa2;
 }
 
 /* Media query */
@@ -768,7 +769,7 @@ header .logo img {
 }
 
 .info-item a{
-    color: #4f7c96da;
+    color: #24aaafa2;
 }
 
 .submit{
@@ -780,7 +781,7 @@ header .logo img {
     border-radius: 25px;
     display: flex;
     margin: auto;
-    background: #4f7c96da;
+    background: #24aaafa2;
     font-family: "Teachers", sans-serif;
 }
 
@@ -851,7 +852,7 @@ footer img{
 }
 
 .navigation a:hover, .adress a:hover{
-    color: #4f7c96da;
+    color: #24aaafa2;
 }
 
 .media div{
