@@ -117,7 +117,8 @@ header .logo img {
 .head-list ul li a {
     padding: 5px 0;
     color: #c0c0c0;
-    /* color: #141b1fda; */
+    transition-delay: 0.5s;
+    transition: 0.8s ease-in-out;
 }
 
 .header-color {
@@ -183,11 +184,12 @@ header .logo img {
         top: 120px;
         left: 30px;
         right: 30px;
-        height: 70vh;
+        height: 100vh;
         width: 100%;
+        font-size: 18px;
         z-index: 2002;
         width: calc(100% - 60px);
-        padding: 30px 30px;
+        padding: 50px 50px;
         transition: 0.4s;
         transition: 0.8s ease-in-out;
         transform: translateX(-120%);
