@@ -181,7 +181,7 @@ header .logo img {
 @media screen and (max-width: 700px){
     .head-list ul{
         position: fixed;
-        top: 120px;
+        top: 90px;
         left: 30px;
         right: 30px;
         height: 100vh;
@@ -191,8 +191,8 @@ header .logo img {
         width: calc(100% - 60px);
         padding: 50px 50px;
         transition: 0.4s;
-        transition: 0.8s ease-in-out;
-        transform: translateX(-120%);
+        transition: 0.8s;
+        transform: translateX(120%);
         align-items: flex-start;
         flex-direction: column;
         background-color: #24aaafa2;
