@@ -483,23 +483,26 @@ header .logo img {
 / ----------------- */
 
 .quality{
+    margin-top: 30px;
+    margin-bottom: 30px;
     background-color: #2e3b45de;
 }
 
 .quality-container{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-wrap: wrap;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     justify-content: center;
-    -webkit-column-gap: 10px;
+    -webkit-column-gap: 5px;
 }
 
 .quality-container span{
     padding: 10px 15px;
     border-radius: 25px;
     width: fit-content;
+    font-style: italic;
     border: 1px solid #75747458;
 }
 
