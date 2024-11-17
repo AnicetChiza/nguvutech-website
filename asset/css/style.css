@@ -444,7 +444,7 @@ header .logo img {
 }
 
 .service-item:hover{
-    background-color: #16222cee;
+    background-color: #2e3b45de;
 }
 
 .service-item i{
@@ -483,7 +483,7 @@ header .logo img {
 / ----------------- */
 
 .quality{
-    background-color: #16222cee;
+    background-color: #2e3b45de;
 }
 
 .quality-container{
@@ -664,7 +664,6 @@ header .logo img {
 /-------------------------- */
 
 .articles{
-    background-color: #16222cee;
     display: flex;
     align-items: center;
     padding-top: 70px;
@@ -673,6 +672,7 @@ header .logo img {
     margin-bottom: 30px;
     gap: 15px;
     -webkit-column-gap: 15px;
+    background-color: #2e3b45de;
     justify-content: space-between;
 }
 
@@ -810,7 +810,7 @@ header .logo img {
 /-------------------------- */
 
 footer{
-    background-color: #16222cee;
+    background-color: #2e3b45de;
 }
 
 footer img{
