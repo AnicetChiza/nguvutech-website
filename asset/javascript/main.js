@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const menuIcon = document.querySelector('.menu-icon');
     const exitIcon = document.querySelector('.exit-icon');
     const overlay = document.querySelector('.overlay');
+    const theBody = document.querySelector('body');
     const menuItems = document.querySelectorAll('.header-list ul li a');
 
     if(menuIcon){
@@ -30,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             overlay.classList.add('active');
             exitIcon.style.display = 'flex';
             menuIcon.style.display = 'none';
+            document.body.classList.add('no-scroll');
         })
     }
 
@@ -39,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             overlay.classList.remove('active');
             exitIcon.style.display = 'none';
             menuIcon.style.display = 'flex';
+            document.body.classList.remove('no-scroll');
         })
     }
 });
