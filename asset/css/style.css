@@ -27,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: #0A81AB;
+    color: #4879a4;
     font-family: "Raleway", sans-serif;
 }
 
@@ -287,7 +287,7 @@ header .logo img {
 .welcome-text h1 {
     font-size: 45px;
     margin-bottom: 10px;
-    background: linear-gradient(to right, #24aaafa2, #4f7c96da);
+    background: linear-gradient(to right, #24aaafa2, #4879a4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -307,7 +307,7 @@ header .logo img {
     /* border: 1px solid #75747458; */
     transition-delay: 0.2s;
     transition: 0.5s ease-in-out;
-    background-color: #24aaafa2;
+    background-color: #4879a4;
 }
 
 .welcome-text a:hover{
@@ -466,8 +466,10 @@ header .logo img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    color: #4879a4;
     border: 1px solid #75747458;
 }
+
 
 /* Media query */
 
@@ -613,18 +615,18 @@ header .logo img {
     font-size: 13px;
     margin-bottom: 10px;
     -webkit-column-gap: 10px;
-    color: #a6a6a6;
+    color: #ffffff3e;
 }
 
 .blog-date h5 {
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background-color: #a6a6a6;
+    background-color: #767676;
 }
 
 .blog-details .link-title {
-    color: #24aaafa2;
+    color: #c0c0c0;
     transition-delay: 0.2s;
     font-weight: 700;
     transition: 0.4s ease-in-out;
@@ -632,22 +634,20 @@ header .logo img {
 }
 
 .blog-details .link-title:hover {
-    color: #24aaafa2;
+    color: #4879a4;
 }
 
 .blog-details p {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 15px;
+    color: #ffffff7e;
 }
 
 .link {
-    color: #24aaafa2;
-    padding: 10px 25px;
+    color: #ffffff7e;
     display: flex;
-    margin-top: 20px;
-    width: fit-content;
-    border: 1px solid #75747458;
+    margin-top: 25px;
 }
 
 
@@ -701,11 +701,11 @@ header .logo img {
     transition-delay: 0.4s;
     transition: 0.5s ease-in-out;
     border: 1px solid #75747458;
+    background-color: #4879a4;
 }
 
 .articles a:hover{
-    border: 1px solid #24aaafa2;
-    background-color: #24aaafa2;
+    background-color: #4879a4a9;
 }
 
 /* Media query */
@@ -783,7 +783,7 @@ header .logo img {
 }
 
 .info-item a{
-    color: #24aaafa2;
+    color: #4879a4;
 }
 
 .submit{
@@ -795,7 +795,7 @@ header .logo img {
     border-radius: 25px;
     display: flex;
     margin: auto;
-    background: #24aaafa2;
+    background: #4879a4;
     font-family: "Teachers", sans-serif;
 }
 
