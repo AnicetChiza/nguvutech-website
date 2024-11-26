@@ -593,6 +593,25 @@ header .logo img {
     font-size: 35px;
 }
 
+.all-technologies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.all-technologies .technology{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    padding: 20px 20px;
+    border: 1px solid #75747458;
+    -webkit-column-gap: 10px;
+}
+
 /* ----------------- /
 #Blog
 / ----------------- */
