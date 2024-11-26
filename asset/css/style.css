@@ -198,7 +198,7 @@ header .logo img {
         transform: translateX(120%);
         align-items: flex-start;
         flex-direction: column;
-        background-color: #24aaafa2;
+        background-color: #4879a4;
     }
 
     .head-list ul.active{
@@ -582,6 +582,18 @@ header .logo img {
 }
 
 /* ----------------- /
+#Technologies
+/ ----------------- */
+
+.technologies{
+    background-color: #2f3338de;
+}
+
+.technologies h1{
+    font-size: 35px;
+}
+
+/* ----------------- /
 #Blog
 / ----------------- */
 
@@ -866,7 +878,7 @@ footer img{
 }
 
 .navigation a:hover, .adress a:hover{
-    color: #24aaafa2;
+    color: #4879a4;
 }
 
 .media div{
@@ -898,6 +910,7 @@ footer img{
     text-align: center;
     font-size: 13px;
     opacity: 0.8;
+    color: #ffffffb5;
     border-top: 1px solid #75747458;
 }
 
