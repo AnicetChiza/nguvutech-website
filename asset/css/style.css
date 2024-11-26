@@ -687,30 +687,21 @@ header .logo img {
 /* Media query */
 
 @media screen and (max-width: 1200px) {
-    .list-items,
     .us {
         padding-left: 0px;
         padding-right: 0px;
     }
 }
 
-@media screen and (max-width: 960px) {
-    .us {
-        flex-direction: column;
-    }
-    .us div {
-        width: 100%;
-        margin-right: -30px;
-    }
-    .us img {
-        margin-top: -30px;
+@media screen and (max-width: 585px) {
+    .my-items ul {
+        flex-wrap: wrap;
     }
 }
 
-@media screen and (max-width: 470px) {
-    .list-items ul {
-        justify-content: center;
-        flex-wrap: wrap;
+@media screen and (max-width: 448px) {
+    .us div{
+        width: 100%;
     }
 }
 
