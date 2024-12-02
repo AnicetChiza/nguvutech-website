@@ -54,6 +54,10 @@ body{
     background-color: #75747458;
 }
 
+.all-inputs input{
+    outline: none;
+}
+
 .login form a{
     display: flex;
     margin-top: 20px;
@@ -167,6 +171,7 @@ body{
 
 .logout-admin{
     width: 100%;
+    font-family: "Teachers", sans-serif;
 }
 
 .logout-admin span{
@@ -398,4 +403,17 @@ body{
 
 .realisation-item-details div .delete{
     color: #c76363;
+}
+
+/* Media query */
+@media screen and (max-width: 1200px){
+    .admin-realisation-content{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .realisation-content img{
+        width: 100%;
+    }
 }
