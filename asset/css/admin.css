@@ -59,6 +59,38 @@ body{
     transition-delay: 0.4s;
 }
 
+.admin-account{
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-account form{
+    width: 50%;
+    padding: 30px 30px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 10px hsl(0, 0%, 91%);
+}
+
+.admin-account h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-account form input{
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: 1px solid #75747458;
+    font-family: "Teachers", sans-serif;
+}
+
+.admin-account form input[type='submit']{
+    color: #fff;
+}
+
 /* Media query */
 @media screen and (max-width: 1250px){
     .login form{
@@ -72,8 +104,14 @@ body{
     }
 }
 
+@media screen and (max-width: 840px){
+    .admin-account form{
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 630px){
-    .login form{
+    .login form, .admin-account form{
         width: 100%;
         margin-left: 15px;
         margin-right: 15px;
@@ -81,7 +119,7 @@ body{
 }
 
 @media screen and (max-width: 440px){
-    .login form{
+    .login form, .admin-account form{
         padding: 30px 15px;
     }
 }
