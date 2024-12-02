@@ -6,6 +6,11 @@ body{
     background-color: #fff;
 }
 
+.paddings{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .login{
     height: 100vh;
     display: flex;
@@ -320,4 +325,25 @@ body{
     .newss {
         width: 100%;
     }
+}
+
+/* ------------------------- /
+#Admin realisation
+/ ------------------------- */
+
+.admin-realisation-content{
+    display: flex;
+    gap: 15px;
+    -webkit-column-gap: 15px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.realisation-content img{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
 }
