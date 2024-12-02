@@ -254,12 +254,11 @@
 }
 
 .all-item img{
-    width: 335px;
+    width: 330px;
     height: 280px;
     margin-bottom: 10px;
     border-radius: 4px;
     object-fit: cover;
-    border: 1px solid #75747458;
 }
 
 .realisation-item-details{
@@ -274,7 +273,7 @@
     -webkit-column-gap: 10px;
     width: 100%;
     height: 100%;
-    background-color: #141b1fea;
+    background-color: #141b1fd8;
 }
 
 .realisation-item-details a{
