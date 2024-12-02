@@ -2,6 +2,10 @@
 #Login
 / ------------------- */
 
+body{
+    background-color: #fff;
+}
+
 .login{
     height: 100vh;
     display: flex;
@@ -79,5 +83,203 @@
 @media screen and (max-width: 440px){
     .login form{
         padding: 30px 15px;
+    }
+}
+
+/* ------------------------- /
+#Admin css page
+/ ------------------------- */
+
+.admin-section {
+    display: grid;
+    grid-template-columns: 20% auto;
+    background-color: #fff;
+}
+
+.first-bloc nav {
+    width: 20%;
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    padding: 30px 20px;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px hsl(0, 0%, 91%);
+}
+
+.first-bloc nav a,
+.logout-admin {
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    color: #141b1fda;
+    padding: 10px 25px;
+    align-items: center;
+    -webkit-column-gap: 10px;
+    transition-delay: 0.2s;
+    background-color: #f5f5f5;
+    transition: 0.5s ease-in-out;
+}
+
+.logout-admin{
+    width: 100%;
+}
+
+.logout-admin span{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.first-bloc nav a span {
+    color: #141b1fda;
+}
+
+.first-bloc nav a:hover {
+    color: #fff;
+    background-color: #4879a4;
+}
+
+.first-bloc nav a:hover span {
+    color: #fff;
+}
+
+.first-bloc nav .activ {
+    color: #fff;
+    border-radius: 5px;
+    background-color: #4879a4;
+}
+
+.first-bloc nav .activ span {
+    color: #fff;
+}
+
+.first-bloc .logout-admin {
+    border: none;
+    outline: none;
+    color: #141b1fda;
+    font-size: 16px;
+    font-family: "Sulphur Point", sans-serif;
+}
+
+.first-bloc .logout-admin span {
+    color: #141b1fda;
+}
+
+.menu-dash{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+    margin-right: 50px;
+    margin-top: 30px;
+    justify-content: flex-end;
+}
+
+.menu-dash a{
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 25px;
+    border: 1px solid #4879a4;
+    background-color: #4879a4;
+}
+
+.hamburger {
+    display: none;
+}
+
+.exit-dash {
+    display: none;
+}
+
+.newss {
+    width: 60%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #d4dbdf4e;
+    box-shadow: 0px 1px 10px rgba(73, 73, 73, 0.114);
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 1080px) {
+    .admin-section {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .first-bloc nav {
+        position: fixed;
+        right: 100px;
+        top: 0;
+        left: 0px;
+        width: 40%;
+        z-index: 2001;
+        box-shadow: none;
+        transform: translateX(-120%);
+        transition: transform 0.3s ease;
+    }
+    .first-bloc nav.active {
+        transform: translateX(0);
+    }
+    
+    .hamburger {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        display: flex;
+        border-radius: 50%;
+        font-size: 20px;
+        display: flex;
+        color: #37517e;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 1px 10px hsl(0, 0%, 91%);
+    }
+    .exit-dash {
+        display: none;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        cursor: pointer;
+        z-index: 2002;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: #37517e;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
+    .overlay-dash {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.799);
+        z-index: 2000;
+    }
+    .overlay-dash.active {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .newss {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .first-bloc nav {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .newss {
+        width: 100%;
     }
 }
