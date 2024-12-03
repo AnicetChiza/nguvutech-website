@@ -484,3 +484,13 @@ body{
     justify-content: center;
     border: 1px solid #75747458;
 }
+
+/* Media query */
+@media screen and (max-width: 650px){
+    .admin-blog-info{
+        flex-wrap: wrap;
+    }
+    .admin-blog-container{
+        width: 100%;
+    }
+}
