@@ -58,6 +58,12 @@ body{
     outline: none;
 }
 
+textarea{
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 100px;
+}
+
 .login form a{
     display: flex;
     margin-top: 20px;
