@@ -450,3 +450,10 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+.admin-blog-details a{
+    color: #4879a4;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
