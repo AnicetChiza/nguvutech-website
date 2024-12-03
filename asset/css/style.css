@@ -1022,6 +1022,39 @@ footer img{
     background-color: #c0c0c05a;
 }
 
+.newsletter h3{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.newsletter form input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    font-family: "Teachers", sans-serif;
+}
+
+.newsletter form input[type='email']{
+    background: unset;
+    color: #c0c0c0;
+}
+
+.newsletter form input[type='submit']{
+    width: fit-content;
+    color: #c0c0c0;
+    border-radius: 25px;
+    background-color: #4879a4;
+}
+
+.newsletter form {
+    width: 35%;
+    display: flex;
+    padding: 5px;
+    border-radius: 30px;
+    border: 1px solid #75747458;
+}
+
 .copyright{
     margin-top: 20px;
     padding-top: 20px;
@@ -1034,6 +1067,12 @@ footer img{
 
 /* Media query */
 
+@media screen and (max-width: 1155px){
+    .newsletter form{
+        width: 60%;
+    }
+}
+
 @media screen and (max-width: 1030px){
     .footer-container{
         flex-wrap: wrap;
@@ -1045,7 +1084,17 @@ footer img{
         flex-direction: column;
     }
 
+    .newsletter form{
+        width: 80%;
+    }
+
     .footer-about{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .newsletter form{
         width: 100%;
     }
 }
