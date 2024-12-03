@@ -516,6 +516,7 @@ textarea{
     gap: 15px;
     -webkit-column-gap: 15px;
     margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 .record{
@@ -540,4 +541,12 @@ textarea{
     border-radius: 50%;
     color: #4879a4;
     border: 1px solid #75747458;
+}
+
+/* Media query */
+
+@media screen and (max-width: 450px){
+    .record{
+        width: 100%;
+    }
 }
