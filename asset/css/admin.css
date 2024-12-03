@@ -418,8 +418,35 @@ body{
 #Admin blog
 / ---------------------- */
 
+.admin-blog-container{
+    width: 40%;
+}
+
 .admin-blog-container img{
-    width: 380px;
+    width: 100%;
     height: 320px;
     object-fit: cover;
+}
+
+.admin-blog-date{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    margin-top: 15px;
+    -webkit-column-gap: 7px;
+}
+
+.admin-blog-date h5{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #c0c0c0;
+}
+
+.admin-blog-details h4 a{
+    color: #4879a4;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
