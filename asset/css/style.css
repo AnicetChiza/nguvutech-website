@@ -275,7 +275,7 @@ header .logo img {
     color: #b1b1b1cb;
     justify-content: center;
     background: linear-gradient(to right, #16222cee 0%, #141b1fea 100%), url('../images/hero.jpg') fixed no-repeat center;
-    /* background-size: cover; */
+    background-size: cover;
 }
 
 .welcome-container {
