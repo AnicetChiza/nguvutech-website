@@ -28,7 +28,7 @@ h4,
 h5,
 h6 {
     color: #4879a4;
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .padding {
@@ -59,12 +59,11 @@ h6 {
 / ----------------- */
 
 body {
-    font-size: 16px;
-    /* color: #141b1fda; */
+    font-size: 14px;
     color: #c0c0c0;
-    /* background-color: #1c2a37f6; */
+    font-weight: 200;
     background-color: #191d24f5;
-    font-family: "Teachers", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .no-scroll{
@@ -293,7 +292,7 @@ header .logo img {
 }
 
 .welcome-text p{
-    font-size: 20px;
+    font-size: 17px;
 }
 
 .welcome-text a {
