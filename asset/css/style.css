@@ -294,6 +294,7 @@ header .logo img {
     width: 70%;
     font-size: 18px;
     margin: auto;
+    font-weight: 400;
 }
 
 .welcome-text a {
