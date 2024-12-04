@@ -466,8 +466,9 @@ header .logo img {
     margin: auto;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    border-radius: 10px;
     color: #4879a4;
+    font-size: 25px;
     border: 1px solid #75747458;
 }
 
