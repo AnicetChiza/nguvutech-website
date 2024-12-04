@@ -283,7 +283,7 @@ header .logo img {
 }
 
 .welcome-text h1 {
-    font-size: 55px;
+    font-size: 64px;
     margin-bottom: 10px;
     background: linear-gradient(to right, #24aaafa2, #4879a4);
     -webkit-background-clip: text;
@@ -291,7 +291,9 @@ header .logo img {
 }
 
 .welcome-text p{
-    font-size: 17px;
+    width: 70%;
+    font-size: 18px;
+    margin: auto;
 }
 
 .welcome-text a {
