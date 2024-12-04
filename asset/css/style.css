@@ -613,7 +613,7 @@ header .logo img {
         margin-right: 50px;
     }
     .project-image img{
-        width: 400px;
+        width: 500px;
     }
 }
 
@@ -633,7 +633,7 @@ header .logo img {
     }
 
     .project-image img{
-        width: 340px;
+        width: 390px;
     }
 
     .project h3{
@@ -645,19 +645,22 @@ header .logo img {
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 660px){
     .project{
         flex-direction: column;
         text-align: center;
     }
     .project h3{
-        font-size: 25px;
+        font-size: 30px;
+    }
+    .project-image img{
+        width: 100%;
     }
 }
 
-@media screen and (max-width: 370px){
-    .project-image img{
-        width: 100%;
+@media screen and (max-width: 455px){
+    .project h3{
+        font-size: 25px;
     }
 }
 
