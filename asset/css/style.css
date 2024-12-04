@@ -274,8 +274,8 @@ header .logo img {
     text-align: center;
     color: #b1b1b1cb;
     justify-content: center;
-    background: linear-gradient(to right, #16222cee 0%, #141b1fea 100%), url('../images/home/home.jpg') fixed no-repeat center;
-    background-size: cover;
+    background: linear-gradient(to right, #16222cee 0%, #141b1fea 100%), url('../images/hero.jpg') fixed no-repeat center;
+    /* background-size: cover; */
 }
 
 .welcome-container {
