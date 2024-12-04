@@ -501,7 +501,7 @@ header .logo img {
     flex-direction: column;
     gap: 10px;
     text-align: center;
-    padding: 45px 30px;
+    padding: 70px 20px;
     border-radius: 20px;
     -webkit-column-gap: 10px;
     transition: 0.3s;
