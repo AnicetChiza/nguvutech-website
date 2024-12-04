@@ -87,7 +87,6 @@ header {
     padding-right: 100px;
     -webkit-column-gap: 10px;
     justify-content: space-between;
-    /* border-bottom: 1px solid #75747458; */
 }
 
 header .logo img {
@@ -883,7 +882,7 @@ header .logo img {
     width: 100%;
     padding: 15px 15px;
     border: 1px solid #75747458;
-    font-family: "Teachers", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .contact-info{
@@ -925,7 +924,7 @@ header .logo img {
     display: flex;
     margin: auto;
     background: #4879a4;
-    font-family: "Teachers", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 /* media query */
@@ -1031,7 +1030,7 @@ footer img{
     border: none;
     outline: none;
     padding: 10px 15px;
-    font-family: "Teachers", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .newsletter form input[type='email']{
