@@ -35,7 +35,7 @@ body{
     border: none;
     outline: none;
     background: unset;
-    font-family: "Teachers", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .login form input[type='submit']{
@@ -99,7 +99,7 @@ textarea{
     padding: 10px 20px;
     margin-top: 10px;
     border: 1px solid #75747458;
-    font-family: "Teachers", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .admin-account form input[type='submit']{
@@ -177,7 +177,7 @@ textarea{
 
 .logout-admin{
     width: 100%;
-    font-family: "Teachers", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .first-bloc nav a span {
@@ -208,7 +208,7 @@ textarea{
     outline: none;
     color: #141b1fda;
     font-size: 16px;
-    font-family: "Teachers", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .first-bloc .logout-admin span {
