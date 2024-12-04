@@ -285,9 +285,13 @@ header .logo img {
 .welcome-text h1 {
     font-size: 64px;
     margin-bottom: 10px;
-    background: linear-gradient(to right, #24aaafa2, #4879a4);
+    background: linear-gradient(to right, #2455aff8, #4879a4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.title-two{
+    margin-top: -30px;
 }
 
 .welcome-text p{
@@ -323,27 +327,60 @@ header .logo img {
     }
 }
 
-@media screen and (max-width: 530px){
-    .welcome-text h1 {
-        font-size: 30px;
+@media screen and (max-width: 870px){
+    .welcome-text h1{
+        font-size: 55px;
     }
+    .welcome-text p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:625px){
+    .welcome-text h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    /* .welcome-text h1 {
+        font-size: 35px;
+    } */
     
     .welcome-text p{
         font-size: 18px;
     }
+
+    .title-two{
+        margin-top: -20px;
+    }
 }
 
+@media screen and (max-width: 475px){
+    .welcome-text h1{
+        font-size: 32px;
+    }
+    .title-two{
+        margin-top: -15px;
+    }
+}
+
+@media screen and (max-width: 365px){
+    .welcome-text h1{
+        font-size: 28px;
+    }
+}
 /* ----------------- /
 #About us
 / ----------------- */
 
 .about-container{
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 180px;
+    margin-right: 180px;
     display: grid;
     gap: 20px;
     border-radius: 15px;
-    padding: 30px 30px;
+    padding: 20px 20px;
     -webkit-column-gap: 20px;
     grid-template-columns: 30% auto;
     border: 1px solid #75747458;
@@ -403,13 +440,31 @@ header .logo img {
 }
 
 /* Media query */
+
+@media screen and (max-width: 1258px){
+    .about-container{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 1060px){
+    .about-container{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
 @media screen and (max-width: 1030px){
     .about-container{
         display: grid;
-        gap: 5px;
-        padding: 10px 10px;
-        -webkit-column-gap: 5px;
+        gap: 10px;
+        padding: 20px 20px;
+        -webkit-column-gap: 10px;
         grid-template-columns: auto;
+    }
+    .about-item img{
+        height: 200px;
     }
 }
 
