@@ -158,13 +158,14 @@ header .logo img {
 }
 
 .menu-icon{
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     cursor: pointer;
+    font-size: 18px;
     background-color: #c0c0c029;
 }
 
@@ -193,7 +194,7 @@ header .logo img {
         right: 30px;
         height: 100vh;
         width: 100%;
-        font-size: 18px;
+        font-size: 16px;
         z-index: 2002;
         width: calc(100% - 60px);
         padding: 50px 50px;
@@ -207,6 +208,11 @@ header .logo img {
 
     .head-list ul.active{
         transform: translateX(0);
+    }
+
+    .head-active{
+        color: #c0c0c0 !important;
+        border-bottom: 1px solid #c0c0c0;
     }
 
     .icon-menu{
