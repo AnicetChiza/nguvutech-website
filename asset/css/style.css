@@ -108,16 +108,22 @@ header .logo img {
     -webkit-column-gap: 20px;
 }
 
-.active-page a{
+/* .active-page a{
     border-radius: 2px;
     border-bottom: 2px solid #4879a4;
-}
+} */
 
 .head-list ul li a {
-    padding: 5px 0;
+    padding: 3px 0;
     color: #c0c0c0;
+    font-weight: 400;
     transition-delay: 0.5s;
     transition: 0.8s ease-in-out;
+}
+
+.head-active{
+    color: #4879a4 !important;
+    border-bottom: 1px solid #4879a4;
 }
 
 .header-color {
