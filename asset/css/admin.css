@@ -250,9 +250,7 @@ textarea{
     box-shadow: 0px 1px 10px rgba(73, 73, 73, 0.114);
 }
 
-
 /* Media query */
-
 @media screen and (max-width: 1080px) {
     .admin-section {
         display: grid;
@@ -337,7 +335,6 @@ textarea{
 /* ------------------------- /
 #Admin realisation
 / ------------------------- */
-
 .admin-realisation-content{
     display: flex;
     gap: 15px;
@@ -424,7 +421,6 @@ textarea{
 /* ---------------------- /
 #Admin blog
 / ---------------------- */
-
 .admin-blog-info {
     display: flex;
     gap: 20px;
@@ -504,10 +500,6 @@ textarea{
 /* ------------------------- /
 #Admin dashboard
 / ------------------------- */
-/* .admin-records{
-    height: 100vh;
-} */
-
 .my-record{
     display: flex;
     align-items: center;
@@ -544,7 +536,6 @@ textarea{
 }
 
 /* Media query */
-
 @media screen and (max-width: 450px){
     .record{
         width: 100%;

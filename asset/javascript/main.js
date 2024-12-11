@@ -5,7 +5,7 @@ jQuery(function ($) {
     const $header = $('.header');
     $(window).scroll(function (event) {
         const $current = $(this).scrollTop();
-        if ($current > 160) {
+        if ($current > 60) {
             $header.addClass('header-color');
         } else {
             $header.removeClass('header-color');
@@ -17,35 +17,33 @@ jQuery(function ($) {
 #Header
 /-----------------------------*/
 
-document.addEventListener('DOMContentLoaded', () =>{
+document.addEventListener('DOMContentLoaded', () => {
     const list = document.querySelector('.head-list ul');
     const menuIcon = document.querySelector('.menu-icon');
     const exitIcon = document.querySelector('.exit-icon');
     const overlay = document.querySelector('.overlay');
     const theBody = document.querySelector('body');
-    const menuItems = document.querySelectorAll('.header-list ul li a');
 
-    if(menuIcon){
-        menuIcon.addEventListener('click', () =>{
+    if (menuIcon) {
+        menuIcon.addEventListener('click', () => {
             list.classList.add('active');
             overlay.classList.add('active');
-            exitIcon.style.display = 'flex';
+            exitIcon.classList.add('active'); // Ajouter la classe active pour l'icône
             menuIcon.style.display = 'none';
             document.body.classList.add('no-scroll');
-        })
+        });
     }
 
-    if(exitIcon){
-        exitIcon.addEventListener('click', ( )=>{
+    if (exitIcon) {
+        exitIcon.addEventListener('click', () => {
             list.classList.remove('active');
             overlay.classList.remove('active');
-            exitIcon.style.display = 'none';
+            exitIcon.classList.remove('active'); // Supprimer la classe active pour cacher l'icône
             menuIcon.style.display = 'flex';
             document.body.classList.remove('no-scroll');
-        })
+        });
     }
 });
-
 
 /*------------------------------
 #Faq
@@ -112,7 +110,6 @@ document.querySelectorAll('.right').forEach(rightIcon => {
     rightIcon.style.display = 'inline';
 });
 
-// -----------------------------
 function showDropdown() {
     document.getElementById("dropdown-content").style.display = "block";
 }
@@ -133,58 +130,49 @@ document.addEventListener("click", function(event) {
 /*------------------------------
 # Réalisations - Carousel
 /-----------------------------*/
-
-// Sélection des éléments nécessaires
 const leftIcon = document.querySelector('.left-icon');
 const rightIcon = document.querySelector('.right-icon');
 const allItems = document.querySelectorAll('.realisation-all-item .all-item');
 
-let currentIndex = 0; // Index de départ
-let visibleCount = calculateVisibleCount(); // Calcul du nombre d'éléments visibles
+let currentIndex = 0;
+let visibleCount = calculateVisibleCount();
 
-// Fonction pour calculer le nombre d'éléments visibles selon la largeur de l'écran
 function calculateVisibleCount() {
     if (window.innerWidth >= 1230) {
-        return 4; // Grand écran
+        return 4;
     } else if (window.innerWidth >= 970) {
-        return 3; // Écran moyen
+        return 3;
     } else if (window.innerWidth >= 560) {
-        return 2; // Tablette
+        return 2;
     } else {
-        return 1; // Mobile
+        return 1;
     }
 }
 
-// Fonction pour mettre à jour l'affichage des éléments
 function updateVisibility() {
     const totalItems = allItems.length;
 
-    // Empêcher de dépasser les limites
     if (currentIndex + visibleCount > totalItems) {
-        currentIndex = totalItems - visibleCount; // Ajuster pour montrer les derniers éléments visibles
+        currentIndex = totalItems - visibleCount;
     }
     if (currentIndex < 0) {
         currentIndex = 0;
     }
 
-    // Masquer tous les éléments
     allItems.forEach((item, index) => {
         item.style.display = 'none';
     });
 
-    // Afficher uniquement les éléments visibles selon currentIndex
     for (let i = currentIndex; i < currentIndex + visibleCount; i++) {
         if (allItems[i]) {
             allItems[i].style.display = 'block';
         }
     }
 
-    // Gérer l'affichage des icônes de navigation
     leftIcon.style.display = currentIndex > 0 ? 'flex' : 'none';
     rightIcon.style.display = currentIndex + visibleCount < totalItems ? 'flex' : 'none';
 }
 
-// Gestion du clic sur l'icône de droite
 rightIcon.addEventListener('click', () => {
     if (currentIndex + visibleCount < allItems.length) {
         currentIndex++;
@@ -192,7 +180,6 @@ rightIcon.addEventListener('click', () => {
     }
 });
 
-// Gestion du clic sur l'icône de gauche
 leftIcon.addEventListener('click', () => {
     if (currentIndex > 0) {
         currentIndex--;
@@ -200,11 +187,8 @@ leftIcon.addEventListener('click', () => {
     }
 });
 
-// Mise à jour lors du redimensionnement de la fenêtre
 window.addEventListener('resize', () => {
     visibleCount = calculateVisibleCount();
     updateVisibility();
 });
-
-// Initialiser l'affichage
 updateVisibility();

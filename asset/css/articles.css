@@ -80,13 +80,6 @@
 #Articles details
 / --------------------- */
 
-.article-details{
-    /* display: flex;
-    flex-direction: column;
-    gap: 25px;
-    -webkit-column-gap: 25px; */
-}
-
 .our-article{
     display: flex;
     flex-direction: column;
@@ -155,8 +148,6 @@
     }
 }
 
-
-
 /*----------------------------/
 #Faq from faq.html
 /----------------------------*/
@@ -212,9 +203,7 @@
     color: #4879a4;
 }
 
-
 /* Media query */
-
 @media screen and (max-width: 1030px) {
     .faq-container {
         margin-left: 0px;
@@ -227,7 +216,6 @@
         padding: 5px 10px;
     }
 }
-
 
 /* --------------------------- /
 #Realisation page
@@ -318,7 +306,6 @@
 }
 
 /* Media query */
-
 @media screen and (max-width: 580px) {
     .left-icon {
         left: -15px;

@@ -30,19 +30,21 @@
     <!--Header-->
     <header class="header">
         <div class="logo">
-            <a href="#"><img src="asset/images/home/Logo Nguvutech.png" alt=logo ""></a>
+            <a href="#"><img src="asset/images/home/logo.png" alt="logo"></a>
         </div>
         <div class="head-list">
             <ul>
-                <li><a class="head-active" href="#">Accueil</a></li>
-                <li><a href="#about">A propos</a></li>
-                <li><a href="#service">Services</a></li>
-                <li><a href="#blog">Actualités</a></li>
-                <li><a href="realisation.html">Réalisations</a></li>
+                <li class="hidden-list"><a href="#"><i class="bi bi-house-door"></i> Accueil</a></li>
+                <li><a href="#about"><i class="bi bi-person"></i> À propos</a></li>
+                <li><a href="#service"><i class="bi bi-briefcase"></i> Services</a></li>
+                <li><a href="#blog"><i class="bi bi-newspaper"></i> Actualités</a></li>
+                <li><a href="realisation.html"><i class="bi bi-lightbulb"></i> Réalisations</a></li>
             </ul>
             <div class="menu">
                 <div class="icon-menu">
-                    <i class="bi bi-list-nested menu-icon"></i>
+                    <a class="head-active hidden-link" href="#">Accueil</a>
+                    <span class="menu-icon">Menu</span>
+                    <!-- <i class="bi bi-list-nested"></i> -->
                 </div>
                 <div class="overlay"></div>
                 <i class="bi bi-x exit-icon"></i>
@@ -57,7 +59,6 @@
                 <h1>Rendre le quotidien</h1>
                 <h1 class="title-two">numérique</h1>
                 <p>Nous transformons vos idées en solutions numériques innovantes, créant des technologies qui façonnent un avenir digital prometteur.</p>
-                <!-- <a href="#contact">Contactez-nous</a> -->
             </div>
         </div>
     </section>
@@ -319,7 +320,6 @@
         </div>
     </section>
 
-
     <!-- Articles -->
     <section class="articles padding">
         <div>
@@ -330,7 +330,6 @@
             <span>Nos articles à la une</span>
         </a>
     </section>
-
 
     <!-- Contact -->
     <section id="contact" class="contact padding">
