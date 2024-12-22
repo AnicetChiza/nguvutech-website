@@ -148,71 +148,73 @@ document.addEventListener("click", function(event) {
     if (!event.target.closest(".dropdown")) {
         document.getElementById("dropdown-content").style.display = "none";
     }
-});  
+}); 
+
+
 
 
 /*------------------------------
 # Réalisations - Carousel
 /-----------------------------*/
-const leftIcon = document.querySelector('.left-icon');
-const rightIcon = document.querySelector('.right-icon');
-const allItems = document.querySelectorAll('.realisation-all-item .all-item');
+// const leftIcon = document.querySelector('.left-icon');
+// const rightIcon = document.querySelector('.right-icon');
+// const allItems = document.querySelectorAll('.realisation-all-item .all-item');
 
-let currentIndex = 0;
-let visibleCount = calculateVisibleCount();
+// let currentIndex = 0;
+// let visibleCount = calculateVisibleCount();
 
-function calculateVisibleCount() {
-    if (window.innerWidth >= 1230) {
-        return 4;
-    } else if (window.innerWidth >= 970) {
-        return 3;
-    } else if (window.innerWidth >= 560) {
-        return 2;
-    } else {
-        return 1;
-    }
-}
+// function calculateVisibleCount() {
+//     if (window.innerWidth >= 1230) {
+//         return 3;
+//     } else if (window.innerWidth >= 970) {
+//         return 3;
+//     } else if (window.innerWidth >= 560) {
+//         return 2;
+//     } else {
+//         return 1;
+//     }
+// }
 
-function updateVisibility() {
-    const totalItems = allItems.length;
+// function updateVisibility() {
+//     const totalItems = allItems.length;
 
-    if (currentIndex + visibleCount > totalItems) {
-        currentIndex = totalItems - visibleCount;
-    }
-    if (currentIndex < 0) {
-        currentIndex = 0;
-    }
+//     if (currentIndex + visibleCount > totalItems) {
+//         currentIndex = totalItems - visibleCount;
+//     }
+//     if (currentIndex < 0) {
+//         currentIndex = 0;
+//     }
 
-    allItems.forEach((item, index) => {
-        item.style.display = 'none';
-    });
+//     allItems.forEach((item, index) => {
+//         item.style.display = 'none';
+//     });
 
-    for (let i = currentIndex; i < currentIndex + visibleCount; i++) {
-        if (allItems[i]) {
-            allItems[i].style.display = 'block';
-        }
-    }
+//     for (let i = currentIndex; i < currentIndex + visibleCount; i++) {
+//         if (allItems[i]) {
+//             allItems[i].style.display = 'block';
+//         }
+//     }
 
-    leftIcon.style.display = currentIndex > 0 ? 'flex' : 'none';
-    rightIcon.style.display = currentIndex + visibleCount < totalItems ? 'flex' : 'none';
-}
+//     leftIcon.style.display = currentIndex > 0 ? 'flex' : 'none';
+//     rightIcon.style.display = currentIndex + visibleCount < totalItems ? 'flex' : 'none';
+// }
 
-rightIcon.addEventListener('click', () => {
-    if (currentIndex + visibleCount < allItems.length) {
-        currentIndex++;
-        updateVisibility();
-    }
-});
+// rightIcon.addEventListener('click', () => {
+//     if (currentIndex + visibleCount < allItems.length) {
+//         currentIndex++;
+//         updateVisibility();
+//     }
+// });
 
-leftIcon.addEventListener('click', () => {
-    if (currentIndex > 0) {
-        currentIndex--;
-        updateVisibility();
-    }
-});
+// leftIcon.addEventListener('click', () => {
+//     if (currentIndex > 0) {
+//         currentIndex--;
+//         updateVisibility();
+//     }
+// });
 
-window.addEventListener('resize', () => {
-    visibleCount = calculateVisibleCount();
-    updateVisibility();
-});
-updateVisibility();
+// window.addEventListener('resize', () => {
+//     visibleCount = calculateVisibleCount();
+//     updateVisibility();
+// });
+// updateVisibility();

@@ -345,6 +345,12 @@ textarea{
     margin-bottom: 20px;
 }
 
+.realisation-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .realisation-content{
     position: relative;
 }
