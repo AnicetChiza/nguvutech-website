@@ -98,14 +98,15 @@
     flex-direction: column;
     gap: 20px;
     -webkit-column-gap: 20px;
+    text-align: justify;
 }
 
 .display-article{
     display: grid;
-    gap: 20px;
-    -webkit-column-gap: 20px;
+    gap: 30px;
+    -webkit-column-gap: 30px;
     margin-top: 30px;
-    grid-template-columns: auto 25%;
+    grid-template-columns: auto 30%;
 }
 
 .about-ntech{
@@ -120,12 +121,132 @@
 .about-ntech img{
     display: flex;
     margin: auto;
-    width: 150px;
+    width: 130px;
+    margin-bottom: 30px;
     filter: invert(1) brightness(1);
 }
 
-.share-article a{
+.like-article{
+    display: flex;
+    /* padding: 10px 10px;
+    border: 1px solid #75747458; */
+}
+
+.commit, .like, .medias{
+    padding: 12px 20px;
+    border: 1px solid #75747458;
+}
+
+.commit i, .like i{
+    color: #4879a4;
+    font-size: 18px;
+}
+
+.like-article div{
+    display: flex;
+    align-items: center;
+    -webkit-column-gap: 5px;
+    cursor: pointer;
+}
+
+.medias a{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    font-size: 13px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition-delay: 0.4s;
+    transition: 0.7s ease-in-out;
+    background-color: #c0c0c029;
+}
+
+.medias a:hover{
+    background-color: #c0c0c05a;
+}
+
+.article-icons a{
     color: #c0c0c0;
+}
+
+.comments{
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #75747458;
+}
+
+.comments form{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    -webkit-column-gap: 10px;
+}
+
+.comments form input{
+    outline: none;
+    background: unset;
+    width: 100%;
+    font-size: 13px;
+    padding: 15px 20px;
+    color: #c0c0c0;
+    border: 1px solid #75747458;
+    font-family: "Poppins", sans-serif;
+}
+
+.comments form textarea{
+    font-size: 13px;
+    height: 150px;
+    color: #c0c0c0;
+}
+
+.comments form input[type=submit]{
+    color: #4879a4;
+    font-weight: 600;
+    border: none;
+    width: fit-content;
+    display: flex;
+    margin: auto;
+    background-color: #23282cde;
+}
+
+.all-commits{
+    margin-top: 10px;
+    padding-top: 20px;
+    border-top-left-radius: 5px;
+    text-align: left;
+    border-top: 1px solid #75747458;
+}
+
+.commit-container{
+    display: flex;
+    gap: 20px;
+    -webkit-column-gap: 20px;
+    padding: 20px 30px;
+    background-color: #23282cde;
+}
+
+.people-commit i{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #75747458;
+}
+
+.my-commit{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    -webkit-column-gap: 5px;
+}
+
+.my-commit p{
+    margin-top: 10px;
 }
 
 /* Media query */
@@ -145,6 +266,16 @@
     }
     .about-ntech img{
         width: 100px;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .comments form input[type=submit]{
+        width: 100%;
+    }
+
+    .like-article{
+        flex-wrap: wrap;
     }
 }
 
